@@ -82,6 +82,7 @@ public class SpawnManager : MonoBehaviour
         if(enemyWaveNumber == waveNumberToChangeMusic)
         {
             gameManager.MusicIntensifies();
+            ArmadaIntensifies();
         }
         if(enemyWaveNumber >= waveToWinNumber)
         {
@@ -137,6 +138,12 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         gameManager.Victory();
 
+    }
+
+    private void ArmadaIntensifies()
+    {
+        armadaSpawnDelayMin = 0.2f;
+        armadaSpawnDelayMax = 1.5f;
     }
     
 }

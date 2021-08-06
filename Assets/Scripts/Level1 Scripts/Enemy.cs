@@ -8,7 +8,11 @@ public class Enemy : MonoBehaviour
     private bool enemySpawned = false;
     private bool moveToTarget = false;
     private float enemySpeed;
+    private float enemySpeedMin = 0.8f;
+    private float enemySpeedMax = 1.2f;
     private float enemyFallSpeed;
+    private float enemyFallSpeedMin = 1.0f;
+    private float enemyFallSpeedMax = 3.0f;
     public GameObject playerBase;
     
     private Rigidbody enemyRB;
@@ -22,7 +26,7 @@ public class Enemy : MonoBehaviour
     public AudioClip killedPlayer;
     private AudioSource enemySounds;
     public ParticleSystem playerExplodeParticle;
-    private float soundVolumeHalf = 0.4f;
+    private float soundVolumeHalf = 0.6f;
     private float soundVolumeFull = 1.0f;
 
     //reffering to GameManager so we could pass the info
@@ -36,8 +40,8 @@ public class Enemy : MonoBehaviour
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         enemySounds = GetComponent<AudioSource>();
-        enemyFallSpeed = Random.Range(1.0f, 3.0f);
-        enemySpeed = Random.Range(0.8f, 1.2f);
+        enemyFallSpeed = Random.Range(enemyFallSpeedMin, enemyFallSpeedMax);
+        enemySpeed = Random.Range(enemySpeedMin, enemySpeedMax);
         enemyRB = GetComponent<Rigidbody>();
         playerBase = GameObject.Find("PlayerBase");
         StartCoroutine(SpawningEnemy());

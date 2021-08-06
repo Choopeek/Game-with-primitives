@@ -11,6 +11,8 @@ public class GameManagerMenu : MonoBehaviour
     public Button startButton;
     public Button controlsButton;
     public GameObject controlsText;
+    public GameObject controlsTextBackground;
+    public GameObject studioLogoImage;
     private bool controlsDisplayed;
     public MusicController musicController;
 
@@ -38,12 +40,16 @@ public class GameManagerMenu : MonoBehaviour
         if (controlsDisplayed == false)
         {
             controlsText.gameObject.SetActive(true);
+            controlsTextBackground.gameObject.SetActive(true);
+            studioLogoImage.gameObject.SetActive(true);
             controlsDisplayed = true;
         }
 
         else if (controlsDisplayed == true)
         {
             controlsText.gameObject.SetActive(false);
+            controlsTextBackground.gameObject.SetActive(false);
+            studioLogoImage.gameObject.SetActive(false);
             controlsDisplayed = false;
         }
 
