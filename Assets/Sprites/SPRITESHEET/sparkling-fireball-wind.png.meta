@@ -1,0 +1,1938 @@
+fileFormatVersion: 2
+guid: f47e87f2dcbfeb74099a38176083bdc8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1702757488074181570
+    second: sparkling-fireball-wind_0
+  - first:
+      213: 6302982640518263000
+    second: sparkling-fireball-wind_1
+  - first:
+      213: 1416675463916271694
+    second: sparkling-fireball-wind_2
+  - first:
+      213: 8405052313188073239
+    second: sparkling-fireball-wind_3
+  - first:
+      213: 727152256995189666
+    second: sparkling-fireball-wind_4
+  - first:
+      213: 2910950429796359005
+    second: sparkling-fireball-wind_5
+  - first:
+      213: 482602091883229418
+    second: sparkling-fireball-wind_6
+  - first:
+      213: 3767504301382756291
+    second: sparkling-fireball-wind_7
+  - first:
+      213: -5455754348390333289
+    second: sparkling-fireball-wind_8
+  - first:
+      213: -8099382493389298623
+    second: sparkling-fireball-wind_9
+  - first:
+      213: -3541518765457541864
+    second: sparkling-fireball-wind_10
+  - first:
+      213: 337069141167436592
+    second: sparkling-fireball-wind_11
+  - first:
+      213: -7190906984177425786
+    second: sparkling-fireball-wind_12
+  - first:
+      213: -5557931977059577133
+    second: sparkling-fireball-wind_13
+  - first:
+      213: -7670991698625305291
+    second: sparkling-fireball-wind_14
+  - first:
+      213: -8986677545140967820
+    second: sparkling-fireball-wind_15
+  - first:
+      213: -4261068824142714641
+    second: sparkling-fireball-wind_16
+  - first:
+      213: -7932593931169547923
+    second: sparkling-fireball-wind_17
+  - first:
+      213: 7059489003167420942
+    second: sparkling-fireball-wind_18
+  - first:
+      213: 4457891938807727705
+    second: sparkling-fireball-wind_19
+  - first:
+      213: 7473186283543618691
+    second: sparkling-fireball-wind_20
+  - first:
+      213: -7893280774750526171
+    second: sparkling-fireball-wind_21
+  - first:
+      213: -1227419338870652783
+    second: sparkling-fireball-wind_22
+  - first:
+      213: 971858804134080137
+    second: sparkling-fireball-wind_23
+  - first:
+      213: 2727385576846122494
+    second: sparkling-fireball-wind_24
+  - first:
+      213: 1986350482764988838
+    second: sparkling-fireball-wind_25
+  - first:
+      213: 6864041595460102622
+    second: sparkling-fireball-wind_26
+  - first:
+      213: 7935823139691132124
+    second: sparkling-fireball-wind_27
+  - first:
+      213: -604869005560484410
+    second: sparkling-fireball-wind_28
+  - first:
+      213: 4675773796385196691
+    second: sparkling-fireball-wind_29
+  - first:
+      213: -4631734890583185241
+    second: sparkling-fireball-wind_30
+  - first:
+      213: -2342682000143075211
+    second: sparkling-fireball-wind_31
+  - first:
+      213: -8739241032513569604
+    second: sparkling-fireball-wind_32
+  - first:
+      213: 3963781184345730904
+    second: sparkling-fireball-wind_33
+  - first:
+      213: 6636571245917955099
+    second: sparkling-fireball-wind_34
+  - first:
+      213: 5616613782639177501
+    second: sparkling-fireball-wind_35
+  - first:
+      213: -7296336487897118404
+    second: sparkling-fireball-wind_36
+  - first:
+      213: -1079587065028642663
+    second: sparkling-fireball-wind_37
+  - first:
+      213: 3577131029784400497
+    second: sparkling-fireball-wind_38
+  - first:
+      213: 140962933507472951
+    second: sparkling-fireball-wind_39
+  - first:
+      213: -6782274486850207256
+    second: sparkling-fireball-wind_40
+  - first:
+      213: -8046578426389014347
+    second: sparkling-fireball-wind_41
+  - first:
+      213: -43159825260581286
+    second: sparkling-fireball-wind_42
+  - first:
+      213: 9166065217203153147
+    second: sparkling-fireball-wind_43
+  - first:
+      213: 2328854973673243940
+    second: sparkling-fireball-wind_44
+  - first:
+      213: 5924010408660461486
+    second: sparkling-fireball-wind_45
+  - first:
+      213: -3711037456065804019
+    second: sparkling-fireball-wind_46
+  - first:
+      213: -4745626439956694448
+    second: sparkling-fireball-wind_47
+  - first:
+      213: -435842666900448685
+    second: sparkling-fireball-wind_48
+  - first:
+      213: -8898660020198452881
+    second: sparkling-fireball-wind_49
+  - first:
+      213: 506659245983351010
+    second: sparkling-fireball-wind_50
+  - first:
+      213: 8994874049490277808
+    second: sparkling-fireball-wind_51
+  - first:
+      213: 2497501199183453153
+    second: sparkling-fireball-wind_52
+  - first:
+      213: -5040936051859343498
+    second: sparkling-fireball-wind_53
+  - first:
+      213: -3814518579447442782
+    second: sparkling-fireball-wind_54
+  - first:
+      213: 3448975588077800841
+    second: sparkling-fireball-wind_55
+  - first:
+      213: 3876695571977791696
+    second: sparkling-fireball-wind_56
+  - first:
+      213: 8817216170949951062
+    second: sparkling-fireball-wind_57
+  - first:
+      213: -8292943019257003815
+    second: sparkling-fireball-wind_58
+  - first:
+      213: -2432966531627377613
+    second: sparkling-fireball-wind_59
+  - first:
+      213: 6187785094235565323
+    second: sparkling-fireball-wind_60
+  - first:
+      213: -5152816764939587277
+    second: sparkling-fireball-wind_61
+  - first:
+      213: 6403146012598102847
+    second: sparkling-fireball-wind_62
+  - first:
+      213: 7256586759228435694
+    second: sparkling-fireball-wind_63
+  - first:
+      213: 7134104688266216308
+    second: sparkling-fireball-wind_64
+  - first:
+      213: -346185045063321911
+    second: sparkling-fireball-wind_65
+  - first:
+      213: -8414534674664359538
+    second: sparkling-fireball-wind_66
+  - first:
+      213: 4601010940951685931
+    second: sparkling-fireball-wind_67
+  - first:
+      213: -850600554321884553
+    second: sparkling-fireball-wind_68
+  - first:
+      213: -5716210314760864557
+    second: sparkling-fireball-wind_69
+  - first:
+      213: 4682365487112109673
+    second: sparkling-fireball-wind_70
+  - first:
+      213: 8370664903095327940
+    second: sparkling-fireball-wind_71
+  - first:
+      213: -2071745588733126297
+    second: sparkling-fireball-wind_72
+  - first:
+      213: -8003031059248862663
+    second: sparkling-fireball-wind_73
+  - first:
+      213: 2661262670334604857
+    second: sparkling-fireball-wind_74
+  - first:
+      213: -946086482542831071
+    second: sparkling-fireball-wind_75
+  - first:
+      213: -1611730249192722106
+    second: sparkling-fireball-wind_76
+  - first:
+      213: -1795355313903774876
+    second: sparkling-fireball-wind_77
+  - first:
+      213: 428330536167068216
+    second: sparkling-fireball-wind_78
+  - first:
+      213: -6211111618526246343
+    second: sparkling-fireball-wind_79
+  - first:
+      213: -1692136797421494026
+    second: sparkling-fireball-wind_80
+  - first:
+      213: -4576956939722925313
+    second: sparkling-fireball-wind_81
+  - first:
+      213: 2402231957539889782
+    second: sparkling-fireball-wind_82
+  - first:
+      213: -4929746490894238510
+    second: sparkling-fireball-wind_83
+  - first:
+      213: 5895141516202292677
+    second: sparkling-fireball-wind_84
+  - first:
+      213: -1200835688776055519
+    second: sparkling-fireball-wind_85
+  - first:
+      213: 8517748029376636358
+    second: sparkling-fireball-wind_86
+  - first:
+      213: -3346072115800340646
+    second: sparkling-fireball-wind_87
+  - first:
+      213: -1383880287844409713
+    second: sparkling-fireball-wind_88
+  - first:
+      213: -4738441160282469110
+    second: sparkling-fireball-wind_89
+  - first:
+      213: 7848586604228069598
+    second: sparkling-fireball-wind_90
+  - first:
+      213: 1323059195601550877
+    second: sparkling-fireball-wind_91
+  - first:
+      213: -5533680665543081778
+    second: sparkling-fireball-wind_92
+  - first:
+      213: -3298538426838629005
+    second: sparkling-fireball-wind_93
+  - first:
+      213: -3558331838481496199
+    second: sparkling-fireball-wind_94
+  - first:
+      213: -5112918294012200040
+    second: sparkling-fireball-wind_95
+  - first:
+      213: -3071451396649225769
+    second: sparkling-fireball-wind_96
+  - first:
+      213: -8591967088356152111
+    second: sparkling-fireball-wind_97
+  - first:
+      213: -2066813730468707811
+    second: sparkling-fireball-wind_98
+  - first:
+      213: -1572475803121837961
+    second: sparkling-fireball-wind_99
+  - first:
+      213: 1308819231740137908
+    second: sparkling-fireball-wind_100
+  - first:
+      213: 4204534212339500901
+    second: sparkling-fireball-wind_101
+  - first:
+      213: -3904156333728578583
+    second: sparkling-fireball-wind_102
+  - first:
+      213: 5364728946652381702
+    second: sparkling-fireball-wind_103
+  - first:
+      213: 1653949981717962314
+    second: sparkling-fireball-wind_104
+  - first:
+      213: 1209779936427773185
+    second: sparkling-fireball-wind_105
+  - first:
+      213: -6006065158467028763
+    second: sparkling-fireball-wind_106
+  - first:
+      213: -7183440805023583876
+    second: sparkling-fireball-wind_107
+  - first:
+      213: 7669992281373479848
+    second: sparkling-fireball-wind_108
+  - first:
+      213: -4461857940352966735
+    second: sparkling-fireball-wind_109
+  - first:
+      213: -5780977492248068915
+    second: sparkling-fireball-wind_110
+  - first:
+      213: -7756328075519114371
+    second: sparkling-fireball-wind_111
+  - first:
+      213: -7909094028797996758
+    second: sparkling-fireball-wind_112
+  - first:
+      213: -2577280885993364696
+    second: sparkling-fireball-wind_113
+  - first:
+      213: 1829209429492247935
+    second: sparkling-fireball-wind_114
+  - first:
+      213: 1457857368398142467
+    second: sparkling-fireball-wind_115
+  - first:
+      213: 2961315212924155360
+    second: sparkling-fireball-wind_116
+  - first:
+      213: 8109070495213859354
+    second: sparkling-fireball-wind_117
+  - first:
+      213: -8713553175979011993
+    second: sparkling-fireball-wind_118
+  - first:
+      213: 4749504113848209836
+    second: sparkling-fireball-wind_119
+  - first:
+      213: 5255140850256688175
+    second: sparkling-fireball-wind_120
+  - first:
+      213: -6358593284828856985
+    second: sparkling-fireball-wind_121
+  - first:
+      213: 2718801774760728598
+    second: sparkling-fireball-wind_122
+  - first:
+      213: -491277798320081051
+    second: sparkling-fireball-wind_123
+  - first:
+      213: -8657027550899041164
+    second: sparkling-fireball-wind_124
+  - first:
+      213: 1894992184229324443
+    second: sparkling-fireball-wind_125
+  - first:
+      213: -2980525225779691747
+    second: sparkling-fireball-wind_126
+  - first:
+      213: 5016733257548911268
+    second: sparkling-fireball-wind_127
+  - first:
+      213: 5402408110084149275
+    second: sparkling-fireball-wind_128
+  - first:
+      213: 91352224175886966
+    second: sparkling-fireball-wind_129
+  - first:
+      213: -8694020488773718458
+    second: sparkling-fireball-wind_130
+  - first:
+      213: 4097796004928143419
+    second: sparkling-fireball-wind_131
+  - first:
+      213: -209796238803745376
+    second: sparkling-fireball-wind_132
+  - first:
+      213: 3245543169919017631
+    second: sparkling-fireball-wind_133
+  - first:
+      213: 3010149586757077749
+    second: sparkling-fireball-wind_134
+  - first:
+      213: 1054866538480477975
+    second: sparkling-fireball-wind_135
+  - first:
+      213: 4009711341189276669
+    second: sparkling-fireball-wind_136
+  - first:
+      213: -438355539291423351
+    second: sparkling-fireball-wind_137
+  - first:
+      213: -6106004926970568084
+    second: sparkling-fireball-wind_138
+  - first:
+      213: 8413365314986098010
+    second: sparkling-fireball-wind_139
+  - first:
+      213: -8367554637351061085
+    second: sparkling-fireball-wind_140
+  - first:
+      213: -2899129142936090591
+    second: sparkling-fireball-wind_141
+  - first:
+      213: -4407285995879354224
+    second: sparkling-fireball-wind_142
+  - first:
+      213: 1625006069082783108
+    second: sparkling-fireball-wind_143
+  - first:
+      213: 1493289666307036269
+    second: sparkling-fireball-wind_144
+  - first:
+      213: 333669722264725052
+    second: sparkling-fireball-wind_145
+  - first:
+      213: 2731603614732997796
+    second: sparkling-fireball-wind_146
+  - first:
+      213: -3928951403759978865
+    second: sparkling-fireball-wind_147
+  - first:
+      213: 2599234335878204919
+    second: sparkling-fireball-wind_148
+  - first:
+      213: -7292588311926093548
+    second: sparkling-fireball-wind_149
+  - first:
+      213: -447275480163776445
+    second: sparkling-fireball-wind_150
+  - first:
+      213: -1192244531224016174
+    second: sparkling-fireball-wind_151
+  - first:
+      213: 8863932223086051350
+    second: sparkling-fireball-wind_152
+  - first:
+      213: 5276926758831611454
+    second: sparkling-fireball-wind_153
+  - first:
+      213: -6927306084056528161
+    second: sparkling-fireball-wind_154
+  - first:
+      213: 6032915908570728973
+    second: sparkling-fireball-wind_155
+  - first:
+      213: 1411098047035078607
+    second: sparkling-fireball-wind_156
+  - first:
+      213: 3531204920237560741
+    second: sparkling-fireball-wind_157
+  - first:
+      213: -6244908858185885905
+    second: sparkling-fireball-wind_158
+  - first:
+      213: -367684142249858256
+    second: sparkling-fireball-wind_159
+  - first:
+      213: -8720996759060345199
+    second: sparkling-fireball-wind_160
+  - first:
+      213: 7383561382548012489
+    second: sparkling-fireball-wind_161
+  - first:
+      213: 5283167505381515896
+    second: sparkling-fireball-wind_162
+  - first:
+      213: -8792156937780119274
+    second: sparkling-fireball-wind_163
+  - first:
+      213: 5516664909909150634
+    second: sparkling-fireball-wind_164
+  - first:
+      213: 6803052894097987009
+    second: sparkling-fireball-wind_165
+  - first:
+      213: 781729820281095235
+    second: sparkling-fireball-wind_166
+  - first:
+      213: -1076142621862017954
+    second: sparkling-fireball-wind_167
+  - first:
+      213: 1782915161909740602
+    second: sparkling-fireball-wind_168
+  - first:
+      213: 2072637193988171911
+    second: sparkling-fireball-wind_169
+  - first:
+      213: -1394912961802563249
+    second: sparkling-fireball-wind_170
+  - first:
+      213: 1823885126346076300
+    second: sparkling-fireball-wind_171
+  - first:
+      213: -8680419754015564979
+    second: sparkling-fireball-wind_172
+  - first:
+      213: -2226064300907142304
+    second: sparkling-fireball-wind_173
+  - first:
+      213: -7936406923096707454
+    second: sparkling-fireball-wind_174
+  - first:
+      213: -6234741070108541550
+    second: sparkling-fireball-wind_175
+  - first:
+      213: -8375319591063434645
+    second: sparkling-fireball-wind_176
+  - first:
+      213: 2559857133621849716
+    second: sparkling-fireball-wind_177
+  - first:
+      213: -2576184703149642231
+    second: sparkling-fireball-wind_178
+  - first:
+      213: -3186457920064440367
+    second: sparkling-fireball-wind_179
+  - first:
+      213: 8236198918195650657
+    second: sparkling-fireball-wind_180
+  - first:
+      213: 1417240905113608895
+    second: sparkling-fireball-wind_181
+  - first:
+      213: -3117952399765283554
+    second: sparkling-fireball-wind_182
+  - first:
+      213: 8008440728363244055
+    second: sparkling-fireball-wind_183
+  - first:
+      213: 8625910083804209905
+    second: sparkling-fireball-wind_184
+  - first:
+      213: 4251213575695894432
+    second: sparkling-fireball-wind_185
+  - first:
+      213: 7222345645726241173
+    second: sparkling-fireball-wind_186
+  - first:
+      213: 1048061372567569546
+    second: sparkling-fireball-wind_187
+  - first:
+      213: -4884493420951210027
+    second: sparkling-fireball-wind_188
+  - first:
+      213: 185783392548627374
+    second: sparkling-fireball-wind_189
+  - first:
+      213: 4375968077322873268
+    second: sparkling-fireball-wind_190
+  - first:
+      213: -1183189378130627296
+    second: sparkling-fireball-wind_191
+  - first:
+      213: -801798673696611053
+    second: sparkling-fireball-wind_192
+  - first:
+      213: -8262864374273270982
+    second: sparkling-fireball-wind_193
+  - first:
+      213: 1968481451034744970
+    second: sparkling-fireball-wind_194
+  - first:
+      213: -783937369326730068
+    second: sparkling-fireball-wind_195
+  - first:
+      213: 4844222786041055345
+    second: sparkling-fireball-wind_196
+  - first:
+      213: -8998359616457406393
+    second: sparkling-fireball-wind_197
+  - first:
+      213: 4367249755844718068
+    second: sparkling-fireball-wind_198
+  - first:
+      213: 1640591244932672320
+    second: sparkling-fireball-wind_199
+  - first:
+      213: 437444532897214110
+    second: sparkling-fireball-wind_200
+  - first:
+      213: 2406235213281736609
+    second: sparkling-fireball-wind_201
+  - first:
+      213: 3685636183817309805
+    second: sparkling-fireball-wind_202
+  - first:
+      213: -2163786545560418709
+    second: sparkling-fireball-wind_203
+  - first:
+      213: 7429061693754041671
+    second: sparkling-fireball-wind_204
+  - first:
+      213: 941833623081591516
+    second: sparkling-fireball-wind_205
+  - first:
+      213: -3649746783207444929
+    second: sparkling-fireball-wind_206
+  - first:
+      213: -6340887689893656315
+    second: sparkling-fireball-wind_207
+  - first:
+      213: 8798749523626298236
+    second: sparkling-fireball-wind_208
+  - first:
+      213: -4832031192661261373
+    second: sparkling-fireball-wind_209
+  - first:
+      213: -5572819009201997124
+    second: sparkling-fireball-wind_210
+  - first:
+      213: -3301776242674846515
+    second: sparkling-fireball-wind_211
+  - first:
+      213: 1896526463086383628
+    second: sparkling-fireball-wind_212
+  - first:
+      213: -7943614566092450240
+    second: sparkling-fireball-wind_213
+  - first:
+      213: -8924662835698061677
+    second: sparkling-fireball-wind_214
+  - first:
+      213: -1260918684669367077
+    second: sparkling-fireball-wind_215
+  - first:
+      213: 3924047719326046203
+    second: sparkling-fireball-wind_216
+  - first:
+      213: -3158485019938539891
+    second: sparkling-fireball-wind_217
+  - first:
+      213: -9072227649101643638
+    second: sparkling-fireball-wind_218
+  - first:
+      213: -7260892739993221044
+    second: sparkling-fireball-wind_219
+  - first:
+      213: 8325972903311752993
+    second: sparkling-fireball-wind_220
+  - first:
+      213: 8632049778087100457
+    second: sparkling-fireball-wind_221
+  - first:
+      213: 4876525714185767504
+    second: sparkling-fireball-wind_222
+  - first:
+      213: -5101680229954450805
+    second: sparkling-fireball-wind_223
+  - first:
+      213: 3489069392583866903
+    second: sparkling-fireball-wind_224
+  - first:
+      213: 6636701876538297244
+    second: sparkling-fireball-wind_225
+  - first:
+      213: 1503152562072726014
+    second: sparkling-fireball-wind_226
+  - first:
+      213: -6899061077082344377
+    second: sparkling-fireball-wind_227
+  - first:
+      213: -8832107753508705637
+    second: sparkling-fireball-wind_228
+  - first:
+      213: 4239233559974602822
+    second: sparkling-fireball-wind_229
+  - first:
+      213: -7384869475894585559
+    second: sparkling-fireball-wind_230
+  - first:
+      213: 2288698638072038356
+    second: sparkling-fireball-wind_231
+  - first:
+      213: -8918968724526114178
+    second: sparkling-fireball-wind_232
+  - first:
+      213: 3180795078896453766
+    second: sparkling-fireball-wind_233
+  - first:
+      213: 5049811984624842200
+    second: sparkling-fireball-wind_234
+  - first:
+      213: -6411548695688950350
+    second: sparkling-fireball-wind_235
+  - first:
+      213: 1297235455573309333
+    second: sparkling-fireball-wind_236
+  - first:
+      213: 7245679175093022734
+    second: sparkling-fireball-wind_237
+  - first:
+      213: -3510377267768969696
+    second: sparkling-fireball-wind_238
+  - first:
+      213: 6382069190475326202
+    second: sparkling-fireball-wind_239
+  - first:
+      213: -8542002041442101187
+    second: sparkling-fireball-wind_240
+  - first:
+      213: -2805350552573675735
+    second: sparkling-fireball-wind_241
+  - first:
+      213: 7672582393332852864
+    second: sparkling-fireball-wind_242
+  - first:
+      213: 2459072772697399769
+    second: sparkling-fireball-wind_243
+  - first:
+      213: 846926093235877987
+    second: sparkling-fireball-wind_244
+  - first:
+      213: -3517665667541044280
+    second: sparkling-fireball-wind_245
+  - first:
+      213: 1529334206966211422
+    second: sparkling-fireball-wind_246
+  - first:
+      213: -7916860081882199882
+    second: sparkling-fireball-wind_247
+  - first:
+      213: 6583474527935364356
+    second: sparkling-fireball-wind_248
+  - first:
+      213: 1742381818932417884
+    second: sparkling-fireball-wind_249
+  - first:
+      213: -7792656126088150807
+    second: sparkling-fireball-wind_250
+  - first:
+      213: 5329960690942226592
+    second: sparkling-fireball-wind_251
+  - first:
+      213: 9219018069520225342
+    second: sparkling-fireball-wind_252
+  - first:
+      213: 2633577802297812757
+    second: sparkling-fireball-wind_253
+  - first:
+      213: 4026643577837929647
+    second: sparkling-fireball-wind_254
+  - first:
+      213: -2639705313909511695
+    second: sparkling-fireball-wind_255
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34b3b016179e58e0800000000000000
+      internalID: -1702757488074181570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d07b812151b87750800000000000000
+      internalID: 6302982640518263000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48bdbc14da09a310800000000000000
+      internalID: 1416675463916271694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f76260c8eb4a470800000000000000
+      internalID: 8405052313188073239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a362d7002d571a00800000000000000
+      internalID: 727152256995189666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b58c63ef5c56820800000000000000
+      internalID: 2910950429796359005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae07f8eab0c82b600800000000000000
+      internalID: 482602091883229418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7eca5733dd84430800000000000000
+      internalID: 3767504301382756291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794c66273544944b0800000000000000
+      internalID: -5455754348390333289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144638dd886399f80800000000000000
+      internalID: -8099382493389298623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815f583527ff9dec0800000000000000
+      internalID: -3541518765457541864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033f70819928da400800000000000000
+      internalID: 337069141167436592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682aa3b6234c43c90800000000000000
+      internalID: -7190906984177425786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2549560524ed2b0800000000000000
+      internalID: -5557931977059577133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535e77851b92b8590800000000000000
+      internalID: -7670991698625305291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_15
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476a4ead268e84380800000000000000
+      internalID: -8986677545140967820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe86b750b74add4c0800000000000000
+      internalID: -4261068824142714641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69383929d3c9e190800000000000000
+      internalID: -7932593931169547923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02129978d758f160800000000000000
+      internalID: 7059489003167420942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95646b3791d9ddd30800000000000000
+      internalID: 4457891938807727705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38460fa845716b760800000000000000
+      internalID: 7473186283543618691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525239ca4fe657290800000000000000
+      internalID: -7893280774750526171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1908b2c4d9457fee0800000000000000
+      internalID: -1227419338870652783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e6f38ee6cbc7d00800000000000000
+      internalID: 971858804134080137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efddf695bbe99d520800000000000000
+      internalID: 2727385576846122494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a102ac6d3fe09b10800000000000000
+      internalID: 1986350482764988838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9a7ecb679f14f50800000000000000
+      internalID: 6864041595460102622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd47d998915b12e60800000000000000
+      internalID: 7935823139691132124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd6ceb18d21b97f0800000000000000
+      internalID: -604869005560484410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a8e979e7fa3e040800000000000000
+      internalID: 4675773796385196691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_30
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8a10138a5c8bfb0800000000000000
+      internalID: -4631734890583185241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_31
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57835c7022f1d7fd0800000000000000
+      internalID: -2342682000143075211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcb28a559af7b680800000000000000
+      internalID: -8739241032513569604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fed447cfd220730800000000000000
+      internalID: 3963781184345730904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14e287d266d91c50800000000000000
+      internalID: 6636571245917955099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f65ca2a7832fd40800000000000000
+      internalID: 5616613782639177501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_36
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39cb253f943eba90800000000000000
+      internalID: -7296336487897118404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9987cd4c8498401f0800000000000000
+      internalID: -1079587065028642663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172935918b584a130800000000000000
+      internalID: 3577131029784400497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eb53a8a0dc4f100800000000000000
+      internalID: 140962933507472951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1491ac94580e1a0800000000000000
+      internalID: -6782274486850207256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8d2c5cd8fc45090800000000000000
+      internalID: -8046578426389014347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e66ca1e5aa66ff0800000000000000
+      internalID: -43159825260581286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_43
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8257b40c7643f70800000000000000
+      internalID: 9166065217203153147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425023f7241c15020800000000000000
+      internalID: 2328854973673243940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_45
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea76ce57410563250800000000000000
+      internalID: 5924010408660461486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_46
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09470b781fbf7cc0800000000000000
+      internalID: -3711037456065804019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_47
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05afda175e5242eb0800000000000000
+      internalID: -4745626439956694448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a9075576393f9f0800000000000000
+      internalID: -435842666900448685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sparkling-fireball-wind_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61d917dbdb918480800000000000000
+      internalID: -8898660020198452881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ced23c4e45ad34440878aea2a0b53183
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
