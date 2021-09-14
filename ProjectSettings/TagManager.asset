@@ -12,6 +12,8 @@ TagManager:
   - wall
   - BOSS
   - LaunchedEnemy
+  - EnemyWaitingToBeLaunched
+  - GlowingEnemy
   layers:
   - Default
   - TransparentFX

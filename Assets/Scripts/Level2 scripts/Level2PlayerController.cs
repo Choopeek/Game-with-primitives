@@ -7,6 +7,7 @@ public class Level2PlayerController : MonoBehaviour
     private float playerSpeed = 3f;
     private float playerRightBound = 1.94f;
     private float playerLeftBound = -4.93f;
+    
         
     void Start()
     {
