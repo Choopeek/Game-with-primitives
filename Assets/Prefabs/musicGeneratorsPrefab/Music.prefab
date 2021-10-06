@@ -52,3 +52,6 @@ MonoBehaviour:
   menuMusicObject: {fileID: 7575018678237642760, guid: 93a7d36752d16a741852f3954aa59784, type: 3}
   calmMusicObject: {fileID: 7465260813567425929, guid: a7b551a76252a30498bb1d6c2ffbf15a, type: 3}
   dynamicMusicObject: {fileID: 5638763829583888743, guid: 1b008e18eba190b469c12dbf2b902475, type: 3}
+  level2StartMusic: {fileID: 2856159198130655093, guid: 142ebea9949ecdc498586d9bbfdf49c3, type: 3}
+  level2CalmMusic: {fileID: 5859307250302667739, guid: 38506a0bf0086b3439e57ed313c855ba, type: 3}
+  level2DynamicMusic: {fileID: 5320388443798375241, guid: 5857c8c0e74c843458cf49696677072a, type: 3}

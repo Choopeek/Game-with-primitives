@@ -23,14 +23,15 @@ public class LaunchedEnemy : MonoBehaviour
     public float delayBeforeLaunchMax = 3f;
     //secondWave helps that enemies don't launch altogether.
     public bool secondWave = false;
-    //you can give some attacks an invulnerability
-    private bool enemyInvulnurable = false;
 
+    #region WaveAttacks Variables
     public bool enemyWaveAttack; //here we store all variables needed for the Wave Attack
     public float enemyWaveAttackSpeed;
     private float destroyBoundZ = -32f;    
     public bool enemyWaveAttackRunning;
+    #endregion
 
+    #region TopAttacks Variables
     public bool enemyTopAttack; //here we store all variables needed for the Top Attack
     private bool enemyTopPositionPreparing;
     private float topBound = 40f;
@@ -40,7 +41,11 @@ public class LaunchedEnemy : MonoBehaviour
     public Vector3 topAttackPosition;
     private float waitForSecondsTopAttack = 2f;
     private float downBound = -10f;
-    
+    //needed for correct sound performance
+    bool passingBy;
+    int passingByBound = 6;
+    #endregion
+
 
     public bool enemyColumnAttack;
     public float enemyColumnAttackSpeed;
@@ -53,6 +58,13 @@ public class LaunchedEnemy : MonoBehaviour
     public float enemyBurstAttackSpeed;
     public Vector3 enemyBurstAttackStartPos;
 
+    private Rigidbody enemyRB;
+
+    EnemySoundController enemySound;
+
+    
+    
+
     
 
     
@@ -64,7 +76,9 @@ public class LaunchedEnemy : MonoBehaviour
     {
         boss = GameObject.Find("BOSS").GetComponent<BossScript>();
         currentColor = GetComponent<Renderer>().material.color;
-
+        enemyRB = GetComponent<Rigidbody>();
+        enemySound = GetComponent<EnemySoundController>();        
+        enemyRB.constraints = RigidbodyConstraints.FreezeAll;
 
     }
 
@@ -119,8 +133,9 @@ public class LaunchedEnemy : MonoBehaviour
         }
         yield return new WaitForSeconds(timeBeforeLaunch);
         
-        //gameObject.tag = "LaunchedEnemy";
+        gameObject.tag = "EnemyGO";
         enemyWaveAttackRunning = true;
+        enemySound.WaveAttackSound();
         while (enemyWaveAttackRunning)
         {
             transform.Translate(Vector3.back * enemyWaveAttackSpeed * Time.deltaTime);
@@ -142,6 +157,7 @@ public class LaunchedEnemy : MonoBehaviour
         }
         yield return new WaitForSeconds(timeBeforeLaunch);
         enemyTopPositionPreparing = true;
+        enemySound.TopAttackSound();
         while (enemyTopPositionPreparing)
         {
             
@@ -161,6 +177,10 @@ public class LaunchedEnemy : MonoBehaviour
         while (!enemyDownPosition)
         {
             transform.Translate(Vector3.down * enemyTopAttackSpeed * Time.deltaTime);
+            if (transform.position.y <= passingByBound && !passingBy)
+            {
+                PlayPassingBy();
+            }
             if (transform.position.y <= downBound)
             {
                 enemyDownPosition = true;
@@ -177,9 +197,16 @@ public class LaunchedEnemy : MonoBehaviour
         bool burstAttack = true;        
         transform.position = enemyBurstAttackStartPos;
         yield return new WaitForSeconds(enemyBurstAttackDelayBeforeLaunch);
+        gameObject.tag = "EnemyGO";
+        enemySound.BurstAttackSound();
         while (burstAttack)
         {
             transform.Translate(Vector3.back * enemyBurstAttackSpeed * Time.deltaTime);
+
+            if (transform.position.z < 10 && !passingBy)
+            {
+                BurstPassingBy();
+            }
             if (transform.position.z < destroyBoundZ)
             {
                 burstAttack = false;
@@ -193,17 +220,18 @@ public class LaunchedEnemy : MonoBehaviour
 
     IEnumerator StartEnemyColumnAttack()
     {
-        enemyInvulnurable = true;
+        
         bool columnAttack = true;
         transform.position = columnAttackPos;
         yield return new WaitForSeconds(enemyBurstAttackDelayBeforeLaunch);
         StartCoroutine(changeColumnColour());
+        enemySound.ColumnAttackSound();
         while (columnAttack)
         {
             transform.Translate(Vector3.back * enemyColumnAttackSpeed * Time.deltaTime);
             if (transform.position.z < destroyBoundZ)
             {
-                columnAttack = false;
+                columnAttack = false;                
                 Destroy(gameObject);
             }
             yield return null;
@@ -253,11 +281,12 @@ public class LaunchedEnemy : MonoBehaviour
                 {
                     GetComponent<Renderer>().material.color = new Color(colorGlower, 0, 0, 1);
                     colorGlower = colorGlower - 0.9f;
+                    
                 }
                 if (colorGlower >= 0)
                 {
                     GetComponent<Renderer>().material.color = new Color(colorGlower, 0, 0, 1);
-                    colorGlower = colorGlower + 0.01f;
+                    colorGlower = colorGlower + 0.05f;
                 }
                 if (Time.time >= estimateTime)
                 {
@@ -273,5 +302,31 @@ public class LaunchedEnemy : MonoBehaviour
         yield return null;
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("projectile"))
+        {
+            
+            Debug.Log("I'm hit");
+            
+        }
+    }
+
+    void PlayPassingBy()
+    {
+        if(!passingBy)
+        {
+            enemySound.TopPassingBySoundPlayback();
+            passingBy = true;
+        }
+    }
+
+    void BurstPassingBy()
+    {
+        if(!passingBy)
+        {
+            enemySound.BurstPassingByPlayback();
+            passingBy = true;
+        }
+    }
 }

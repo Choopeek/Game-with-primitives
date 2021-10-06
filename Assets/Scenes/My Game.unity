@@ -1067,8 +1067,8 @@ MonoBehaviour:
   - {fileID: 3179352337624183320, guid: 63ad77c1ca5e6e0438842b78417064b0, type: 3}
   - {fileID: 1044101965864496, guid: d14e9861728291447b65daabe02a18b5, type: 3}
   armadaShipPrefab: {fileID: 1993769037395402, guid: 73b09e5094ff94fddac6945d623c08af, type: 3}
-  waveNumberToChangeMusic: 7
-  waveToWinNumber: 12
+  waveNumberToChangeMusic: 2
+  waveToWinNumber: 4
 --- !u!4 &1282254656
 Transform:
   m_ObjectHideFlags: 0
@@ -1186,6 +1186,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5634619529412361715, guid: 37bd8c7db1ba661488abc598fd4e1f8d, type: 3}
+      propertyPath: stopMusic
+      value: 
+      objectReference: {fileID: -2818554395179163258, guid: 9221fc428126f95458bebb25424b29b8, type: 2}
     - target: {fileID: 5634619529412361716, guid: 37bd8c7db1ba661488abc598fd4e1f8d, type: 3}
       propertyPath: m_RootOrder
       value: 9

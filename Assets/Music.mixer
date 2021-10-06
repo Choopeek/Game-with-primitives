@@ -42,6 +42,20 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!245 &-2818554395179163258
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TurnMusicOff
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: e734a7afe922007438ba5457d26c6c64
+  m_FloatValues:
+    4538af0405c588c458370fa7e939b51c: -80
+    bc08af8b4b5940e4c9fbf0265824c1f0: -80
+    de7c037d4cbbc0943a8c7129c4b87f0f: -80
+  m_TransitionOverrides: {}
 --- !u!244 &-2712714168648334605
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -88,6 +102,7 @@ AudioMixerController:
   - {fileID: 5361423660824543013}
   - {fileID: -5988466746324718835}
   - {fileID: 24500006}
+  - {fileID: -2818554395179163258}
   m_StartSnapshot: {fileID: 5361423660824543013}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -101,7 +116,7 @@ AudioMixerController:
     - d7ce61c82e41ca740ba26d7ccb7b099a
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: -2818554395179163258}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0

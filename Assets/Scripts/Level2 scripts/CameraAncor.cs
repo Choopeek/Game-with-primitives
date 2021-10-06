@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class CameraAncor : MonoBehaviour
 {
+    Level2GameManager gameManager;
 
-    [SerializeField] float cameraSpeed = 1f;
-    private Vector3 cameraDefaultPos;
-    bool shakeTheCamera;
-    
-    [SerializeField] float cameraBoundX = 0f;
-    [SerializeField] float cameraBoundY = 0f;
-    [SerializeField] float cameraBoundZ = 0f;
+    [SerializeField] float cameraSpeed = 50f;
+    [SerializeField] float rotateSpeed = -20f;
+
+    public Vector3 currentPos;
+   [SerializeField] Vector3 levelStartPos;
+
+    float currentXRotation = 5.552085f;
+    float levelStartRotation = 90;
+
+    bool cameraInPosition;
+    bool cameraRotated;
+    bool cameraPositioned;
 
     void Start()
     {
-        
+        //Debug.Log("rotation" + transform.rotation);
+        //Debug.Log("local rotation" + transform.localRotation);
+        //Debug.Log("eulerAngles" + transform.eulerAngles);
+        //Debug.Log("local eulerAngles " + transform.localEulerAngles);
+        //Debug.Log(transform.eulerAngles.x);
+        gameManager = GameObject.Find("Level2GameManager").GetComponent<Level2GameManager>();
        
         
     }
@@ -26,32 +37,89 @@ public class CameraAncor : MonoBehaviour
         
     }
 
-    void CalculateNextPos()
+    public void PrepareForStart()
     {
+        currentPos = transform.position;
+        transform.position = levelStartPos;
+        transform.Rotate(levelStartRotation, transform.rotation.y, transform.rotation.z);
         
-        //for some fucking reason, RandomRange inside Vector3 gives me INTs. Unless hardcoded floats in the new Vector3.
-        Vector3 nextPos = new Vector3(Random.Range(-3f, 0f), Random.Range(2f, 2.5f), Random.Range(-26f, -25f));        
-        StartCoroutine(MoveToNewPos(nextPos));
-
+    }  
+    
+    public void MoveCameraForStart()
+    {
+        StartCoroutine(MoveToStartPos(currentPos));
+        StartCoroutine(RotateCameraVer2());
     }
 
-    IEnumerator MoveToNewPos(Vector3 nextPos)
+    IEnumerator RotateCamera()
     {
-        
-        
-        bool movecamera = true;
-        float elapsedTime = Time.time + 2.0f;
-        while(movecamera)
-        {
+        bool rotate = true;
+        Vector3 rotateTo = new Vector3(currentXRotation, 0, 0);
+        Debug.Log("starting rotation");
+        while (rotate)
+        {           
             
-            transform.position = Vector3.MoveTowards(transform.position, nextPos, cameraSpeed * Time.deltaTime);
-            if(Time.time >= elapsedTime)
+            transform.eulerAngles = Vector3.Lerp(transform.rotation.eulerAngles, rotateTo, Time.deltaTime);
+
+            if (transform.rotation.y == 0)
             {
-                Debug.Log("CameraAtNewPosition");
-                movecamera = false;
+                rotate = false;
+                Debug.Log("finished rotating");                
+                StopAllCoroutines();
             }
             yield return null;
         }
-        CalculateNextPos();
+        
+    } //Im not deleting this metod. Cause using VECTOR3.lerp to rotate camera - gives some funny effect;
+
+    public IEnumerator RotateCameraVer2()
+    {        
+        bool rotate = true;
+        while (rotate)
+        {
+            transform.Rotate(rotateSpeed * Time.deltaTime, 0, 0);            
+            if (transform.eulerAngles.x <= currentXRotation)
+            {
+                rotate = false;
+                cameraRotated = true;
+                CameraInPosition();
+            }
+            yield return null;
+            
+        }
+    }
+
+    public IEnumerator MoveToStartPos(Vector3 nextPos)
+    {
+
+
+        bool movecamera = true;        
+        while (movecamera)
+        {
+            
+            transform.position = Vector3.MoveTowards(transform.position, nextPos, cameraSpeed * Time.deltaTime);
+            if (transform.position == currentPos)
+            {
+                                
+                movecamera = false;
+                cameraPositioned = true;
+                CameraInPosition();
+
+            }
+            yield return null;
+        }
+        
+
+    }
+
+    void CameraInPosition()
+    {
+        if(cameraPositioned & cameraRotated)
+        {
+            cameraInPosition = true;
+            gameManager.StartTheGame();
+        }
+
+
     }
 }
