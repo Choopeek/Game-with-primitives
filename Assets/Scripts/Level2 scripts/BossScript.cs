@@ -37,26 +37,10 @@ public class BossScript : MonoBehaviour
     public float enemyTopAttackSpeed = 10f;
     public float enemyColumnAttackSpeed = 10f;
     public float enemyBurstAttackSpeed = 30f;
-
-    private float delayBetweenAttacks = 3f;
+    public float delayBetweenSubWaves = 3f;
+    public float delayBetweenWaves = 3f;
     #endregion
-
-    #region boss AttackManager Variables
-    //values for the AttackManager
-    int minAttackTypeValue = 1;
-    int maxAttackTypeValue = 5; //5 is used cause the INT RandomRange do not pick the max value;
-    int burstAttackNumber = 1;
-    int columnAttackNumber = 2;
-    int topAttackNumber = 3;
-    int waveAttackNumber = 4;
-    int rangeNumberOfAttacksMin = 1;
-    int rangeNubmerOfAttacksMax = 10;
-    int rangeNumberOfAttacksForOne = 8;
-    int rangeNOAforMoreAttacks = 2;
-    int rangeNOAforMoreAttacksMax = 5;
-
-
-    #endregion
+        
 
     #region WaveLauncherTracker
 
@@ -101,10 +85,10 @@ public class BossScript : MonoBehaviour
     }
 
     #region BossAssembly Functions
-    public void BossAssemble()
+    public IEnumerator BossAssemble()
     {
         
-        bossSound.PlayOneShot(bossInPositionSound, soundVolumeFull);
+       //well for fucks sake
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         initialBossUnitsPosition = new Vector3[enemies.Length];
         for (int i = 0; i < enemies.Length; i++)
@@ -112,13 +96,14 @@ public class BossScript : MonoBehaviour
             initialBossUnitsPosition[i] = enemies[i].transform.position;
             enemies[i].transform.position = bossDropDownPosition;
         }
-                
+        yield return new WaitForFixedUpdate();
         StartCoroutine(BossAssembleStage1());
         
     }
 
     IEnumerator BossAssembleStage1()
     {
+        bossSound.PlayOneShot(bossInPositionSound, soundVolumeFull);
         yield return new WaitForSeconds(2.5f);
         bool assembled = false;
         bool assemblySound = false;
@@ -150,7 +135,7 @@ public class BossScript : MonoBehaviour
 
         }
         //AttackManager();
-        WaveLauncherTracker();
+        //WaveLauncherTracker();
 
     }
     #endregion
@@ -163,7 +148,7 @@ public class BossScript : MonoBehaviour
         
         if (subWaveAttackNumber >= 6 || subWaveAttackNumber <= 0)
         {
-            Debug.Log("forming new wave");
+           
             FormNewWave();            
             return;
         }
@@ -183,7 +168,7 @@ public class BossScript : MonoBehaviour
 
     private void SetForUsualAttack()
     {
-        Debug.Log("Setting Usual Attack");
+        
         startBurstAttack = false;
         startColumnAttack = false;
         startTopAttack = false;
@@ -193,7 +178,7 @@ public class BossScript : MonoBehaviour
 
     private void SetForSpecialAttack()
     {
-        Debug.Log("Setting Special Attack");
+        
         int AttackType = Random.Range(1, 4);
         if (AttackType == 1)
         {
@@ -304,8 +289,7 @@ public class BossScript : MonoBehaviour
     private void FormNewWave()
     {
         waveType = Random.Range(1, 3);        
-        subWaveAttackNumber = 1;
-        waveNumber++;
+        subWaveAttackNumber = 1;        
         gameManager.WaveTracker();        
         Debug.Log("WaveNumber is " + waveNumber);
         
@@ -330,10 +314,7 @@ public class BossScript : MonoBehaviour
             enemyToLaunch[i].transform.rotation = enemyStartingPosition[i].transform.rotation;            
             launchedEnemy.StartCoroutine(launchedEnemy.EnemyAssemblePosition());
             
-            if (enemies.Length < 500)
-            {
-                BossIsDead();
-            }
+            
             
         }
         
@@ -358,7 +339,7 @@ public class BossScript : MonoBehaviour
         if (enemiesInPosition == enemyToLaunch.Length)
         {
             launchedEnemy = enemyToLaunch[11].GetComponent<LaunchedEnemy>();
-            Debug.Log("WaitForEnemiesInPosiitons() ");
+            
             StartAttack();
         }
 
@@ -370,7 +351,7 @@ public class BossScript : MonoBehaviour
 
     void StartAttack() //here we pass the info, so the enemyobjects will know what type of attack they should perform
     {
-        Debug.Log("StartAttack() ");
+        
         if (startWaveAttack)
         {
             for (int i = 0; i < enemyToLaunch.Length; i++)
@@ -459,14 +440,14 @@ public class BossScript : MonoBehaviour
 
     IEnumerator DelayBeetweenSubAttacks()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(delayBetweenSubWaves);
         WaveLauncherTracker();
     }
 
      
     //end of sending his part as enemies.
     #endregion
-    private void BossIsAngry() //makes Boss change color. Like he is angry. Messes up with StartNewAttack method. Rewrite it, or do not use them simultaneously at least.
+    public void BossIsAngry() //makes Boss change color. Like he is angry. Messes up with StartNewAttack method. Rewrite it, or do not use them simultaneously at least.
     {
         Debug.Log("BossIsAngry");
         GameObject[] glowers;
@@ -477,6 +458,7 @@ public class BossScript : MonoBehaviour
         {
             glowers[i].AddComponent<LaunchedEnemy>();
             enemyToGlow = glowers[i].GetComponent<LaunchedEnemy>();
+            enemyToGlow.angryOnly = true;
             StartCoroutine(enemyToGlow.GlowEveryone());
         }
     }
@@ -484,13 +466,60 @@ public class BossScript : MonoBehaviour
     IEnumerator PlayAngrySound()
     {
         
-        bossSound.PlayOneShot(bossAngrySound, soundVolumeFull);
-        yield return null;
+        bossSound.PlayOneShot(bossAngrySound, soundVolumeFull * 2);
+        yield return new WaitForSeconds(1);
+        bossSound.PlayOneShot(bossAngrySound, soundVolumeFull * 3);
+        yield return new WaitForSeconds(1);
+        bossSound.PlayOneShot(bossAngrySound, soundVolumeFull * 3);
+        yield return new WaitForSeconds(1);
+
+
     }
 
-    private void BossIsDead()
+   public void BossIsDead()
     {
         Debug.Log("Boss is DEAD");
+        StartCoroutine(Death());
+        bossSound.PlayOneShot(bossDeathSound, soundVolumeFull * 2);
+    }
+
+    IEnumerator Death()
+    {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            enemies[i].AddComponent<LaunchedEnemy>();
+            enemies[i].AddComponent<Rigidbody>();
+            launchedEnemy = enemies[i].GetComponent<LaunchedEnemy>();
+            launchedEnemy.bossIsDying = true;
+            launchedEnemy.angryOnly = true;
+        }
+
+        
+        StartCoroutine(RemoveBossFromScreen());
+        yield return null;
+         
+    }
+
+    IEnumerator RemoveBossFromScreen()
+    {
+        yield return new WaitForSeconds(10);
+        gameManager.WonTheGame();
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            Rigidbody RB = enemies[i].GetComponent<Rigidbody>();
+            Destroy(RB);
+        }
+        bool moveOffScreen = true;
+        while (moveOffScreen)
+        {
+            transform.Translate(Vector3.down * 4 * Time.deltaTime);
+            if (transform.position.y >= 30)
+            {
+                moveOffScreen = false;
+            }
+            yield return null;
+        }
         Destroy(gameObject);
     }
 

@@ -1067,8 +1067,8 @@ MonoBehaviour:
   - {fileID: 3179352337624183320, guid: 63ad77c1ca5e6e0438842b78417064b0, type: 3}
   - {fileID: 1044101965864496, guid: d14e9861728291447b65daabe02a18b5, type: 3}
   armadaShipPrefab: {fileID: 1993769037395402, guid: 73b09e5094ff94fddac6945d623c08af, type: 3}
-  waveNumberToChangeMusic: 2
-  waveToWinNumber: 4
+  waveNumberToChangeMusic: 6
+  waveToWinNumber: 12
 --- !u!4 &1282254656
 Transform:
   m_ObjectHideFlags: 0

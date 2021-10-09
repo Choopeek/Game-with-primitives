@@ -47,8 +47,16 @@ public class CameraAncor : MonoBehaviour
     
     public void MoveCameraForStart()
     {
-        StartCoroutine(MoveToStartPos(currentPos));
-        StartCoroutine(RotateCameraVer2());
+        if (!cameraInPosition)
+        {
+            StartCoroutine(MoveToStartPos(currentPos));
+        }
+        if (!cameraRotated)
+        {
+            StartCoroutine(RotateCameraVer2());
+        }
+        
+        
     }
 
     IEnumerator RotateCamera()

@@ -62,12 +62,21 @@ public class LaunchedEnemy : MonoBehaviour
 
     EnemySoundController enemySound;
 
-    
-    
+    public bool angryOnly;
 
-    
+    public bool bossIsDying;
 
-    
+    Level2GameManager gameManager;
+
+
+
+    private void Awake()
+    {
+        
+    }
+
+
+
 
 
 
@@ -76,9 +85,17 @@ public class LaunchedEnemy : MonoBehaviour
     {
         boss = GameObject.Find("BOSS").GetComponent<BossScript>();
         currentColor = GetComponent<Renderer>().material.color;
-        enemyRB = GetComponent<Rigidbody>();
-        enemySound = GetComponent<EnemySoundController>();        
-        enemyRB.constraints = RigidbodyConstraints.FreezeAll;
+        if (!angryOnly)
+        {
+            enemyRB = GetComponent<Rigidbody>();
+            enemySound = GetComponent<EnemySoundController>();
+            enemyRB.constraints = RigidbodyConstraints.FreezeAll;
+        }
+        if (bossIsDying)
+        {
+            enemyRB = GetComponent<Rigidbody>();
+        }
+        gameManager = gameManager = GameObject.Find("Level2GameManager").GetComponent<Level2GameManager>();
 
     }
 
@@ -272,7 +289,7 @@ public class LaunchedEnemy : MonoBehaviour
             
             gameObject.tag = "GlowingEnemy";
             float currentTime = Time.time;
-            float estimateTime = currentTime + 2.0f;
+            float estimateTime = currentTime + 3.5f;
             bool glowEveryone = true;
             float colorGlower = 0.1f;
             while (glowEveryone)
@@ -307,8 +324,14 @@ public class LaunchedEnemy : MonoBehaviour
         if (other.CompareTag("projectile"))
         {
             
-            Debug.Log("I'm hit");
+            //Debug.Log("I'm hit");
             
+        }
+
+        if (other.CompareTag("player"))
+        {
+            
+            gameManager.PlayerIsDead();
         }
     }
 
@@ -329,4 +352,7 @@ public class LaunchedEnemy : MonoBehaviour
             passingBy = true;
         }
     }
+
+    
+        
 }

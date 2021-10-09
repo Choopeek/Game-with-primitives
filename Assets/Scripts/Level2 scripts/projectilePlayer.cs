@@ -42,8 +42,7 @@ public class projectilePlayer : MonoBehaviour
         if (other.CompareTag("EnemyGO"))
         {
             Instantiate(enemyDeathParticle, other.transform.position, other.transform.rotation);
-            spawnManager.EnemyDeathSound(other.transform.position);
-            Debug.Log("Hit the enemy");
+            spawnManager.EnemyDeathSound(other.transform.position);            
             Destroy(other.gameObject);
             DestroyBullet();
         }

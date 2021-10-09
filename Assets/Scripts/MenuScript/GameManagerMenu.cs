@@ -19,6 +19,8 @@ public class GameManagerMenu : MonoBehaviour
     public Animator transition;
     public float sceneTransitionTime = 1f;
 
+    [SerializeField] Button level2Button;
+
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +74,10 @@ public class GameManagerMenu : MonoBehaviour
         SceneManager.LoadScene("My Game");
     }
 
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
     
    
 

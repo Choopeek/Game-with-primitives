@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Level2GameManager : MonoBehaviour
 {
@@ -19,11 +21,12 @@ public class Level2GameManager : MonoBehaviour
     BossDropShipSoundController dropshipSounds;
 
 
-    bool gameIsActive;
+    bool playerIsDead;
+    bool wonTheGame;
+    [SerializeField] Level2PlayerController player;
 
 
-
-    public bool playerIsMovingForward; 
+     
     [SerializeField] GameObject groundParticleLeft;
     [SerializeField] GameObject groundParticleCenter;
     [SerializeField] GameObject groundParticleRight;
@@ -34,37 +37,59 @@ public class Level2GameManager : MonoBehaviour
 
     //DIALOGUES
     [SerializeField] DialogueTrigger paskaDialogueObj;
+    [SerializeField] DialogueTrigger bossAssembledCutscene;
+    [SerializeField] DialogueTrigger NowWeAreTalking;
 
 
     //boss AttackStuff
     int waveNumber = 0;
+
+    //level progression bool's
+    bool cutsceneFirst;
+    bool cutsceneSecond;
+    bool cutsceneThird;
+    [SerializeField] int waveNumberForRPG = 7;
+    [SerializeField] int waveNumberToWinGame = 15;
+
+    [SerializeField] Button restartButton;
+    [SerializeField] GameObject victoryText;
+    
+
+
     
  
     #endregion
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    
 
     void Start()
     {
         mainCameraController = GameObject.Find("Main Camera").GetComponent<CameraAncor>();
         musicController = GameObject.Find("Music").GetComponent<MusicController>();
-        bossGO.gameObject.SetActive(false);
-        gameIsActive = false;
-        TurnParticlesONOFF(true);                
+        bossGO.gameObject.SetActive(false);        
+        TurnParticlesOFF(true);                
         dropshipSounds = GameObject.Find("BOSSTransport").GetComponent<BossDropShipSoundController>();
-        //StartCoroutine(MoveDropship());
+        
         musicController.MusicStop();
         HandleMainCamera();
 
         paskaDialogueObj.TriggerDialogue();
+        cutsceneFirst = true;
+
         
-        
-        
+
+
+
+
     }
 
     
-    void Update()
-    {
-        
-    }
+    
 
     public void StartTheGame()
     {
@@ -100,6 +125,7 @@ public class Level2GameManager : MonoBehaviour
     {
         
         bool bossIsDropped = false;
+        musicController.Lvl2MusicCalm();
         StartCoroutine(DropshipAway());
         while (!bossIsDropped)
         {
@@ -108,20 +134,22 @@ public class Level2GameManager : MonoBehaviour
             {
                 bossIsDropped = true;
                 bossGO.gameObject.SetActive(true);
-                Destroy(fakeBoss.gameObject);
-                bossSCR = GameObject.Find("BOSS").GetComponent<BossScript>();
-                bossSCR.BossAssemble();
+                Destroy(fakeBoss.gameObject);                
+                bossSCR = GameObject.Find("BOSS").GetComponent<BossScript>();                
+                StartCoroutine(bossSCR.BossAssemble());
                 
             }
             
             yield return null;
         }
+
         
         yield return null;
         
         
     }
 
+    
     IEnumerator DropshipAway()
     {
        
@@ -145,22 +173,91 @@ public class Level2GameManager : MonoBehaviour
 
     //here we will manage a big load of stuff about boss
 
-    public void bossIsAssembled()
+    public void bossIsAssembled() //
     {
-        Debug.Log("boss is assembled and ready to fight");
+
+        bossAssembledCutscene.TriggerDialogue();        
+        
+        
+        
+        
     }
 
 
-    public void WaveTracker()
+    public void WaveTracker() //here we track the waves, and make them harder or easier;
     {
-        waveNumber = bossSCR.waveNumber;
+        waveNumber++;
+        bossSCR.waveNumber = waveNumber;
         Debug.Log("GameManager's " + "WaveNumber is " + waveNumber);
+
+        if (waveNumber == waveNumberToWinGame - 1)
+        {
+            bossSCR.BossIsAngry();
+            StartCoroutine(WaitForAngry());
+            return;
+        }
+
+        if (waveNumber == waveNumberToWinGame)
+        {
+            
+            bossSCR.BossIsDead();
+
+            return;
+            //endGame
+        }
+        if (waveNumber == 4 | waveNumber == 6 | waveNumber == 10 )
+        {
+            MakeGameHarder();
+            bossSCR.BossIsAngry();
+            StartCoroutine(WaitForAngry());
+            return;
+        }   
+                
+
+        if (waveNumber == waveNumberForRPG)
+        {
+            StartCoroutine(WaitForEnemiesToClear());            
+            return;
+        }
+
+        
+        
         bossSCR.WaveLauncherTracker();
         //place some IF's what happens when WaveNumber reaches some point.
     }
+
+
+
+    void MakeGameHarder()
+    {
+        
+        float harderDelayModifier = 0.8f;
+        float harderSpeedModifier = 1.2f;
+        bossSCR.delayBetweenWaves = bossSCR.delayBetweenSubWaves * harderDelayModifier;
+        bossSCR.delayBetweenSubWaves = bossSCR.delayBetweenSubWaves * harderDelayModifier;
+        //bossSCR.enemyBurstAttackSpeed = bossSCR.enemyBurstAttackSpeed * harderSpeedModifier;
+        bossSCR.enemyColumnAttackSpeed = bossSCR.enemyColumnAttackSpeed * harderSpeedModifier;
+        bossSCR.enemyTopAttackAscendSpeed = bossSCR.enemyTopAttackAscendSpeed * harderSpeedModifier;
+        //bossSCR.enemyTopAttackSpeed = bossSCR.enemyTopAttackSpeed * harderSpeedModifier;
+        bossSCR.enemyWaveAttackSpeed = bossSCR.enemyWaveAttackSpeed * harderSpeedModifier;
+    }
+
+    void MakeGameEasier()
+    {
+        Debug.Log("MakingGame easier");
+        float easierDelayModifier = 1.1f;
+        float easierSpeedModifier = 0.9f;
+        bossSCR.delayBetweenWaves = bossSCR.delayBetweenSubWaves * easierDelayModifier;
+        bossSCR.delayBetweenSubWaves = bossSCR.delayBetweenSubWaves * easierDelayModifier;
+        bossSCR.enemyBurstAttackSpeed = bossSCR.enemyBurstAttackSpeed * easierSpeedModifier;
+        bossSCR.enemyColumnAttackSpeed = bossSCR.enemyColumnAttackSpeed * easierSpeedModifier;
+        bossSCR.enemyTopAttackAscendSpeed = bossSCR.enemyTopAttackAscendSpeed * easierSpeedModifier;
+        bossSCR.enemyTopAttackSpeed = bossSCR.enemyTopAttackSpeed * easierSpeedModifier;
+        bossSCR.enemyWaveAttackSpeed = bossSCR.enemyWaveAttackSpeed * easierSpeedModifier;
+    } //unused. Maybe it'll be a good idea to make game easier every time player loses it.
     
 
-    void TurnParticlesONOFF(bool _TurnOFF) //if you pass the @FALSE@ it will turn on the particles
+    void TurnParticlesOFF(bool _TurnOFF) //if you pass the @FALSE@ it will turn on the particles
     {
         bool turnOFF = _TurnOFF;
         if (turnOFF)
@@ -195,10 +292,77 @@ public class Level2GameManager : MonoBehaviour
         }
         if (dialogueState == "exit")
         {
-            mainCameraController.MoveCameraForStart();
+            LevelProgression();
             
         }
         
     }
 
+    void LevelProgression()
+    {
+        if (cutsceneFirst)
+        {
+            mainCameraController.MoveCameraForStart();
+            cutsceneFirst = false;
+            cutsceneSecond = true;
+            return;
+        }
+
+        if (cutsceneSecond)
+        {
+            cutsceneSecond = false;
+            cutsceneThird = true;
+            WaveTracker();            
+            return;
+        }
+
+        if (cutsceneThird)
+        {
+            cutsceneThird = false;            
+            TurnParticlesOFF(false);
+            WaveTracker();
+            return;
+        }
+    }
+
+    IEnumerator WaitForEnemiesToClear()
+    {
+        yield return new WaitForSeconds(3);
+        
+        if (waveNumber == waveNumberForRPG)
+        {
+            StartCoroutine(player.EnlargeYourRPG());
+            yield return new WaitForSeconds(2);
+            musicController.Lvl2MusicDynamic();
+            NowWeAreTalking.TriggerDialogue();
+        }
+                
+
+    }
+
+    IEnumerator WaitForAngry()
+    {
+        yield return new WaitForSeconds(5);
+        WaveTracker();
+    }
+
+    public void PlayerIsDead()
+    {
+        Debug.Log("player is dead");
+        StartCoroutine(ShowRestartButton());
+        player.Death();
+    }
+
+    public void WonTheGame()
+    {
+        Debug.Log("VICTORY");
+        victoryText.gameObject.SetActive(true);
+    }
+
+    IEnumerator ShowRestartButton()
+    {
+        yield return new WaitForSeconds(2);
+        restartButton.gameObject.SetActive(true);
+        
+    }
 }
