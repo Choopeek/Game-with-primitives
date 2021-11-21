@@ -64,8 +64,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] AudioClip bossAssemblyFINISHSound;
     [SerializeField] AudioClip bossDecendSound;
     [SerializeField] AudioClip bossInPositionSound;
-    float soundVolumeFull = 1.0f;
-    float soundVolumeHalf = 0.5f;
+    float soundVolumeFull = 1.0f;    
     float soundVolumeQuarter = 0.25f;
 
     #endregion 

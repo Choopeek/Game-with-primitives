@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour
     public Animator transition;
     public float sceneTransitionTime = 1f;
 
+    [SerializeField] GameObject menu;
+
     private void Awake()
     {
         musicController = GameObject.Find("Music").GetComponent<MusicController>();
@@ -41,6 +44,7 @@ public class GameManager : MonoBehaviour
 
         victory = false;
         victoryTrigger = true;
+        Time.timeScale = 1;
         
     }
 
@@ -53,7 +57,22 @@ public class GameManager : MonoBehaviour
             StartCoroutine(LoadNextLevel());
 
         }
+
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (!IsGamePaused())
+            {
+                PauseMenu();
+            }
+            else
+            {
+                ResumeGame();
+            }
+            
+        }
     }
+
+    
 
     public void RestartGame()
     {
@@ -105,5 +124,40 @@ public class GameManager : MonoBehaviour
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(sceneTransitionTime);
         SceneManager.LoadScene("Level 2");
+    }
+
+
+    bool IsGamePaused()
+    {
+        if (Time.timeScale == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    void PauseMenu()
+    {
+        Time.timeScale = 0;
+        menu.SetActive(true);
+
+    }
+
+    public void ResumeGame()
+    {
+        menu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void ExitGame()
+    {
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
     }
 }

@@ -9,8 +9,7 @@ public class BossDropShipSoundController : MonoBehaviour
     [SerializeField] AudioClip dropshipEngine1;
     [SerializeField] AudioClip dropshipEngine2;
 
-    float fullVolume = 1.0f;
-    float halfVolume = 0.5f;
+    float fullVolume = 1.0f;    
     
     void Start()
     {

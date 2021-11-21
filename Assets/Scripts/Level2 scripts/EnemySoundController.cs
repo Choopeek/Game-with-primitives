@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class EnemySoundController : MonoBehaviour
 {
-    float soundVolumeFull = 1f;
-    float soundVolumeHalf = 0.5f;
+    float soundVolumeFull = 1f;    
     float soundVolumeQuarter = 0.25f;
 
     AudioSource enemySound;

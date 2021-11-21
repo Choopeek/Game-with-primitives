@@ -13,7 +13,7 @@ public class Level2GameManager : MonoBehaviour
     [SerializeField] GameObject fakeBoss;
     float fakeBossInPosBoundY = -9.2f;
     float fakeBossDownSpeed = 10f;
-    
+
     [SerializeField] GameObject bossDropship;
     float bossDropshipBoundZ = 140f;
     float bossDropshipDropPositionBound = 115f;
@@ -21,12 +21,11 @@ public class Level2GameManager : MonoBehaviour
     BossDropShipSoundController dropshipSounds;
 
 
-    bool playerIsDead;
-    bool wonTheGame;
+    
     [SerializeField] Level2PlayerController player;
 
 
-     
+
     [SerializeField] GameObject groundParticleLeft;
     [SerializeField] GameObject groundParticleCenter;
     [SerializeField] GameObject groundParticleRight;
@@ -53,28 +52,34 @@ public class Level2GameManager : MonoBehaviour
 
     [SerializeField] Button restartButton;
     [SerializeField] GameObject victoryText;
+
+    [SerializeField] GameObject menu;
+
+    
     
 
 
-    
- 
+
+
+
     #endregion
 
     public void RestartLevel()
     {
+        UnpauseGame();        
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    
+
 
     void Start()
     {
         mainCameraController = GameObject.Find("Main Camera").GetComponent<CameraAncor>();
         musicController = GameObject.Find("Music").GetComponent<MusicController>();
-        bossGO.gameObject.SetActive(false);        
-        TurnParticlesOFF(true);                
+        bossGO.gameObject.SetActive(false);
+        TurnParticlesOFF(true);
         dropshipSounds = GameObject.Find("BOSSTransport").GetComponent<BossDropShipSoundController>();
-        
+
         musicController.MusicStop();
         HandleMainCamera();
 
@@ -86,11 +91,58 @@ public class Level2GameManager : MonoBehaviour
 
 
 
+
+
     }
 
-    
-    
 
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (!IsGamePaused())
+            {
+                PauseGame();
+            }
+            else
+            {
+                UnpauseGame();
+            }
+        }
+    }
+
+    bool IsGamePaused()
+    {
+        if (Time.timeScale == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    void PauseGame()
+    {
+        Time.timeScale = 0;
+        menu.SetActive(true);
+    }
+
+    public void UnpauseGame()
+    {
+        menu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void ExitGame()
+    {
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
+    }
     public void StartTheGame()
     {
         Debug.Log("StartTheGame");
